@@ -46,7 +46,7 @@ opencode plugin add github:1bigmouse/opencode-session-navigator
 ```powershell
 cd C:\Projects\Opencode_plugin
 npm install
-npm run build
+npm run build:dist
 ```
 
 然后把本地目录加入 `plugins`：
@@ -91,7 +91,7 @@ npm run build
 ```powershell
 npm run watch      # 修改后自动构建，GUI 会热重载
 npm run typecheck  # TypeScript 检查
-npm run build      # 生成 dist/gui-experimental.cjs
+npm run build:dist # 生成 dist/gui-experimental.cjs
 ```
 
 目录结构：
