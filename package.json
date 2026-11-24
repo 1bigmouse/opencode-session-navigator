@@ -1,0 +1,46 @@
+{
+  "name": "opencode-session-navigator",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A floating message navigator for OpenCode Desktop sessions",
+  "license": "MIT",
+  "author": "1bigmouse",
+  "homepage": "https://github.com/1bigmouse/opencode-session-navigator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1bigmouse/opencode-session-navigator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1bigmouse/opencode-session-navigator/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "opencode-desktop",
+    "session",
+    "navigation",
+    "gui"
+  ],
+  "exports": {
+    "./gui-experimental": "./dist/gui-experimental.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "solid-js": "^1.9.0",
+    "typescript": "^7.0.2",
+    "vite": "^7.3.8",
+    "vite-plugin-solid": "^2.11.17"
+  }
+}
